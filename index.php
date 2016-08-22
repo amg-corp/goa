@@ -39,6 +39,8 @@
         <!-- Color CSS Styles  -->
 
         <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen" />
+        <link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/demo/Responsive-Flexible-jQuery-Lightbox-Plugin-Nivo-Lightbox/nivo-lightbox.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" title="blue" media="screen" />
 
 
         <!-- Margo JS  -->
@@ -59,6 +61,7 @@
         <script type="text/javascript" src="js/jquery.parallax.js"></script>
         <script type="text/javascript" src="js/mediaelement-and-player.js"></script>
         <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 
         <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -140,7 +143,10 @@
                                 <i class="fa fa-bars"></i>
                             </button>
                             <!-- End Toggle Nav Link For Mobiles -->
-                            <a class="navbar-brand" href="index.html"><img alt="" src="images/logo.png"></a>
+                            <a class="navbar-brand" href="index.html">
+                                <img alt="" src="images/logo.jpg" width="65" height="100" style="margin-top: -23px;">
+                                <h1 style="margin-top: -50px;margin-left: 70px;">Graduate Optometrist</h1>
+                            </a>
                         </div>
                         <div class="navbar-collapse collapse">
                             <!-- Stat Search -->
@@ -156,26 +162,23 @@
                             <!-- Start Navigation List -->
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <a class="active" href="index.html">Home</a>
-
+                                    <a class="active" href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#pages">Pages</a>
-
+                                    <a href="#pages">Presidents' Desk</a>
                                 </li>
                                 <li>
-                                    <a href="#">Shortcodes</a>
-
+                                    <a href="#members">Members</a>
                                 </li>
                                 <li>
                                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Registration</a>
-
                                 </li>
                                 <li>
-                                    <a href="blog.html">About Us</a>
-
+                                    <a href="#news">Latest News</a>
                                 </li>
-                                <li><a href="contact.html">Contact us</a></li>
+                                <li>
+                                    <a href="#contact">Contact us</a>
+                                </li>
                             </ul>
                             <!-- End Navigation List -->
                         </div>
@@ -291,52 +294,28 @@
             </section>
             <!-- End HomePage Slider -->
 
-
             <!-- Start content -->
             <div id="pages">
                 <div class="container">
 
+                    <div class="hr1 margin-top"></div>
                     <!-- Start Services Icons -->
                     <div class="row">
-
                         <!-- Start Service Icon 1 -->
-                        <div class="col-md-4 col-sm-6 service-box service-icon-left">
+                        <div class="col-md-12 col-sm-12 service-box service-icon-left">
                             <div class="service-icon">
                                 <i class="fa fa-trophy icon-mini-effect icon-effect-1 gray-icon"></i>
                             </div>
                             <div class="service-content">
-                                <h4>Tab1</h4>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia dolores.</p>
+                                <h4>Graduate Optometrists’ Association</h4>
+                                <p>Graduate Optometrists’ Association (GOA) was registered in the year 2006 with the sole intention to
+                                    bring together all Graduates and Qualified Optometrists on a common Platform. We have enormous
+                                    amount of Optometry Workforce in our Country which goes unrecognized. GOA has always been and
+                                    will continue to bridge the gap between one another to make this Platform a strong Representative of
+                                    the whole Optometry community.
+                                </p>
                             </div>
                         </div>
-                        <!-- End Service Icon 1 -->
-
-                        <!-- Start Service Icon 2 -->
-                        <div class="col-md-4 col-sm-6 service-box service-icon-left">
-                            <div class="service-icon">
-                                <i class="fa fa-eye icon-mini-effect icon-effect-1 gray-icon"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>tab2</h4>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia dolores.</p>
-                            </div>
-                        </div>
-                        <!-- End Service Icon 2 -->
-
-                        <!-- Start Service Icon 3 -->
-                        <div class="col-md-4 col-sm-6 service-box service-icon-left">
-                            <div class="service-icon">
-                                <i class="fa fa-code icon-mini-effect icon-effect-1 gray-icon"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>tab3</h4>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia dolores.</p>
-                            </div>
-                        </div>
-                        <!-- End Service Icon 3 -->
-
-
-
                     </div>
                     <!-- End Services Icons -->
 
@@ -347,7 +326,7 @@
                         <div class="col-md-6">
 
                             <!-- Classic Heading -->
-                            <h4 class="classic-title"><span>Our Contribution</span></h4>
+                            <h4 class="classic-title"><span>Presidents' Desk</span></h4>
 
                             <!-- Accordion -->
                             <div class="panel-group" id="accordion">
@@ -357,93 +336,88 @@
                                     <!-- Toggle Heading -->
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-one">
-                                                <i class="icon-down-open-1 control-icon"></i>
-                                                <i class="icon-laptop-1"></i> tab1
-                                            </a>
+
+                                            <i class="icon-laptop-1"></i> 
+                                            <p style="margin: 8px;text-align: center"><strong>NO ONE is as important as ALL OF US</strong></p>
+
                                         </h4>
                                     </div>
                                     <!-- Toggle Content -->
                                     <div id="collapse-one" class="panel-collapse collapse in">
-                                        <div class="panel-body">Duis ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like <strong>readable English</strong>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</div>
+                                        <div class="panel-body">
+                                            <p style="text-align: justify"> 
+                                                <img src='images/president.jpg' style='float: left;padding: 10px;'>
+                                                We believe that we always try our best to cater to our Community as much as we could individually or
+                                                being a representative of some Organization/Hospital. But we have never given a thought of doing all
+                                                these individual or organizational effort under our Banner. Our Optometry community, as whole, should
+                                                take these social responsibilities so that we can reach out to the common people in a greater way and
+                                                establish this noble profession in the Society and it also hopes that each Optometry Professional gets
+                                                his/her long dues in terms of Respect and Dignity.
+                                            </p>
+
+                                            <p style="text-align: justify"> 
+                                                GOA also aims at Promotion and Development of the Academics and Research in Optometry by
+                                                arranging regular CME’s, Seminars, Scientific Programs which in turn would enhance our Skill level to
+                                                establish a better Optometry Practice.
+                                            </p>
+
+                                            <p style="margin: 8px;text-align: center"><strong>The STRENGTH of the TEAM is EACH individual MEMBER. The STRENGTH of the EACH MEMBER is
+                                                    the TEAM.</strong></p>
+                                            <p style="text-align: justify">
+                                                GOA has been trying hard to establish a harmony between our State level Activities with our National
+                                                Bodies to chorus as a Uniform and United voice to fight for the Right of Optometry.
+                                                It also plans to reach out to all young Budding Optometrists to help them build their Careers as
+                                                Qualified, Updated and Confident individual or Optometry Practitioner.
+                                                Hope we all have the same Dream to take Optometry Profession to the height where it deserves to be.</p>
+
+                                            <p style="margin: 8px;text-align: center"><strong>If everyone is moving forward together, then Success takes care of itself</strong></p>
+
+                                            <p style="text-align: justify"> 
+                                                We seek all your Support and Co-operation to pave the way of Promoting Optometry and we hope and
+                                                pray that GOA remains the United voice to represent our Community as I strongly believe that we can
+                                                do much better than what we do individually.
+                                            </p>
+
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- End Accordion 1 -->
-
-                                <!-- Start Accordion 2 -->
-                                <div class="panel panel-default">
-                                    <!-- Toggle Heading -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tow" class="collapsed">
-                                                <i class="icon-down-open-1 control-icon"></i>
-                                                <i class="icon-gift-1"></i> tab2
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <!-- Toggle Content -->
-                                    <div id="collapse-tow" class="panel-collapse collapse">
-                                        <div class="panel-body">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. The point of using Lorem Ipsum is that it has a <strong>more-or-less</strong> normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</div>
-                                    </div>
-                                </div>
-                                <!-- End Accordion 2 -->
-
-                                <!-- Start Accordion 3 -->
-                                <div class="panel panel-default">
-                                    <!-- Toggle Heading -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-three" class="collapsed">
-                                                <i class="icon-down-open-1 control-icon"></i>
-                                                <i class="icon-tint"></i> tab3
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <!-- Toggle Content -->
-                                    <div id="collapse-three" class="panel-collapse collapse">
-                                        <div class="panel-body"><strong>Duis</strong> aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</div>
-                                    </div>
-                                </div>
-                                <!-- End Accordion 3 -->
-
                             </div>
                             <!-- End Accordion -->
-
                         </div>
 
                         <div class="col-md-6">
 
                             <!-- Classic Heading -->
                             <h4 class="classic-title"><span>Register with us</span></h4>
-                            <!-- Start Contact Form -->
-                            <form role="form" class="contact-form" id="contact-form" method="post">
-                                <div class="form-group">
-                                    <div class="controls">
-                                        <input type="text" placeholder="Name" name="name">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="controls">
-                                        <input type="email" class="email" placeholder="Email" name="email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="controls">
-                                        <input type="text" class="requiredField" placeholder="Subject" name="subject">
-                                    </div>
-                                </div>
 
-                                <div class="form-group">
+                            <table id="example" class="display" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Reg No</th>
+                                        <th>10+2</th>
+                                        <th>College</th>
+                                    </tr>
+                                </thead>
 
-                                    <div class="controls">
-                                        <textarea rows="3" placeholder="Message" name="message"></textarea>
-                                    </div>
-                                </div>
-                                <button type="button" id="submit" class="btn-system btn-large" onclick="return doRegister();">Send</button>
-                                <div id="success" style="color:#34495e;"></div>
-                            </form>
-                            <!-- End Contact Form -->
-
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>tiger.nixon@gmail.com</td>
+                                        <td>123456</td>
+                                        <td>JDS</td>
+                                        <td>IEM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>tiger.nixon@gmail.com</td>
+                                        <td>123456</td>
+                                        <td>JDS</td>
+                                        <td>IEM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
@@ -458,74 +432,30 @@
                             <!-- Post 1 -->
                             <div class="post-row item">
                                 <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">28</span><span class="month">Dec</span></div>
+                                    <div class="post-date"><span class="day">18</span><span class="month">Sept</span></div>
                                     <div class="post-type"><i class="fa fa-picture-o"></i></div>
                                 </div>
-                                <h3 class="post-title"><a href="#">Standard Post With Image</a></h3>
+                                <h3 class="post-title"><a href="#">Contact Lens Practice Demonstraion</a></h3>
                                 <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
+                                    <p style="text-align: justify">Speciality Contact Lens Practice in Tackling Irregular Corneal Surface
+                                        A workshop with Live fitting Demonstration.
+                                        1st time in Eastern India, Under the Aegis of Graduate Optometrists' Association.</p>
                                 </div>
                             </div>
 
                             <!-- Post 2 -->
                             <div class="post-row item">
                                 <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
+                                    <div class="post-date"><span class="day">11 - 13</span><span class="month">Sept</span></div>
                                     <div class="post-type"><i class="fa fa-picture-o"></i></div>
                                 </div>
                                 <h3 class="post-title"><a href="#">Post1</a></h3>
                                 <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
+                                    <p>2nd World Congress of Optometry.
+                                        An initiative of the World Council of Optometry <a class="read-more" href="#" data-toggle="modal" data-target="#post2">Read More...</a></p>
                                 </div>
                             </div>
 
-                            <!-- Post 3 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">post2</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Post 4 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Post3</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Post 5 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Standard Post without Image</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Post 6 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Post4</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
@@ -533,13 +463,9 @@
 
                     <!-- Divider -->
                     <div class="hr1 margin-60"></div>
-
-
-
                 </div>
             </div>
             <!-- End content -->
-
 
             <!-- Start Footer -->
             <footer>
@@ -595,7 +521,6 @@
                         <!-- .col-md-3 -->
                         <!-- End Subscribe & Social Links Widget -->
 
-
                         <!-- Start Twitter Widget -->
                         <div class="col-md-3">
                             <div class="footer-widget twitter-widget">
@@ -619,69 +544,81 @@
                         <!-- .col-md-3 -->
                         <!-- End Twitter Widget -->
 
-
                         <!-- Start Flickr Widget -->
                         <div class="col-md-3">
                             <div class="footer-widget flickr-widget">
                                 <h4>Team members<span class="head-line"></span></h4>
                                 <ul class="flickr-list">
                                     <li>
-                                        <a href="images/flickr-01.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-01.jpg">
+                                        <a href="images/current_team/aloke das Secretary.jpg" title="Secretary" class="lightbox">
+                                            <img alt="" src="images/current_team/aloke das Secretary.jpg">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="images/flickr-02.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-02.jpg">
+                                        <a href="images/current_team/Avrasree kundu Asst secretary.jpg" title="Asst. Secretary" class="lightbox">
+                                            <img alt="" src="images/current_team/Avrasree kundu Asst secretary.jpg">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="images/flickr-03.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-03.jpg">
+                                        <a href="images/current_team/ayan ghosh Asst treasurer.jpg" title="Asst. Treasurer" class="lightbox">
+                                            <img alt="" src="images/current_team/ayan ghosh Asst treasurer.jpg">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="images/flickr-04.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-04.jpg">
+                                        <a href="images/current_team/bibekananda chakraborty Treasurer.jpg" title="Treasurer" class="lightbox">
+                                            <img alt="" src="images/current_team/bibekananda chakraborty Treasurer.jpg">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="images/flickr-05.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-05.jpg">
+                                        <a href="images/current_team/sourajit mitra Vice President.jpg" title="Vice President" class="lightbox">
+                                            <img alt="" src="images/current_team/sourajit mitra Vice President.jpg">
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="images/flickr-06.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-06.jpg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="images/flickr-07.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-07.jpg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="images/flickr-08.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-08.jpg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="images/flickr-09.jpg" class="lightbox">
-                                            <img alt="" src="images/flickr-09.jpg">
-                                        </a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
                         <!-- .col-md-3 -->
                         <!-- End Flickr Widget -->
 
-
                         <!-- Start Contact Widget -->
                         <div class="col-md-3">
+                            <div class="footer-widget flickr-widget">  
+                                <h4>Founder members<span class="head-line"></span></h4>
+                                <ul class="flickr-list">
+                                    <li>
+                                        <a href="images/prev_team/achinta banerjee.jpg" class="lightbox">
+                                            <img alt="" src="images/prev_team/achinta banerjee.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/prev_team/bipratip mondal.jpg" class="lightbox">
+                                            <img alt="" src="images/prev_team/bipratip mondal.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/prev_team/Gopinandan mondal.jpg" class="lightbox">
+                                            <img alt="" src="images/prev_team/Gopinandan mondal.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/prev_team/Sanjay Das.jpg" class="lightbox">
+                                            <img alt="" src="images/prev_team/Sanjay Das.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/prev_team/saptarshi sarkar.jpg" class="lightbox">
+                                            <img alt="" src="images/prev_team/saptarshi sarkar.jpg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/prev_team/soumya kanti majumdar.jpg" class="lightbox">
+                                            <img alt="" src="images/prev_team/soumya kanti majumdar.jpg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="footer-widget contact-widget">
-                                <h4><img src=".png" class="img-responsive" alt="Footer Logo" /></h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                                 <ul>
                                     <li><span>Phone Number:</span> +01 234 567 890</li>
                                     <li><span>Email:</span> </li>
@@ -691,13 +628,8 @@
                         </div>
                         <!-- .col-md-3 -->
                         <!-- End Contact Widget -->
-
-
                     </div>
                     <!-- .row -->
-
-
-
                 </div>
             </footer>
             <!-- End Footer -->
@@ -719,11 +651,7 @@
                         <h4 class="modal-title" id="myLargeModalLabel">Enrolment Form for Graduate Optometrist</h4> 
                     </div>
                     <div class="modal-body">
-                        <form class="form-horizontal" action="enrolment.php" method="post" name="payuForm">
-
-<!--                            <input type="hidden" name="key" value="<?php // echo $MERCHANT_KEY    ?>" />
-                            <input type="hidden" name="hash" value="<?php // echo $hash    ?>"/>
-                            <input type="hidden" name="txnid" value="<?php // echo $txnid    ?>" />-->
+                        <form class="form-horizontal" enctype="multipart/form-data" action="enrolment.php" method="post" name="Registration Form">
 
                             <fieldset>
                                 <!-- Text input-->
@@ -734,7 +662,6 @@
                                     </div>
                                 </div>
 
-
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="PostalAddress">Postal Address</label>
                                     <div class="col-md-4">                     
@@ -742,11 +669,18 @@
                                     </div>
                                 </div>
 
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="mobile">Mobile</label>  
+                                    <div class="col-md-4">
+                                        <input id="mobile" name="mobile" type="number" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+
                                 <!-- Text input-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="dob">Date of Birth</label>  
+                                    <label class="col-md-4 control-label" for="Name">Email</label>  
                                     <div class="col-md-4">
-                                        <input id="dob" name="dob" type="date" class="form-control input-md" required="">
+                                        <input id="Email" name="Email" type="email" placeholder="" class="form-control input-md" required="">
                                     </div>
                                 </div>
 
@@ -764,56 +698,50 @@
 
                                 <!-- Text input-->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="institute">Institution Name(10+2)</label>  
+                                    <label class="col-md-4 control-label" for="dob">Date of Birth</label>  
                                     <div class="col-md-4">
-                                        <input id="institueName" name="institueName" type="text" class="form-control input-md" required="">
+                                        <input id="dob" name="dob" type="date" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="school">(10+2) School/College</label>  
+                                    <div class="col-md-4">
+                                        <input id="school" name="school" type="text" class="form-control input-md" required="">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="board">Board/Council(10+2)</label>  
+                                    <label class="col-md-4 control-label" for="board">(10+2) Certificate Attach</label>  
                                     <div class="col-md-4">
-                                        <input id="board" name="board" type="text" class="form-control input-md" required="">
+                                        <input id="certificate" name="certificate" type="file" class="form-control input-md" required="">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="grad">Institution Name(Graduate)</label>  
+                                    <label class="col-md-4 control-label" for="grad">B.Optm college</label>  
                                     <div class="col-md-4">
-                                        <input id="grad" name="grad" type="text" class="form-control input-md" required="">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="board">Board/Council(Graduate)</label>  
-                                    <div class="col-md-4">
-                                        <input id="gradboard" name="gradboard" type="text" class="form-control input-md" required="">
+                                        <input id="college" name="college" type="text" class="form-control input-md" required="">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="Workplace">Present Workplace</label>  
+                                    <label class="col-md-4 control-label" for="board">B.Optm Certificate Attach</label>  
                                     <div class="col-md-4">
-                                        <input id="Workplace" name="Workplace" type="text" class="form-control input-md" required="">
+                                        <input id="grad_certificate" name="grad_certificate" type="file" class="form-control input-md" required="">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="Blood">Blood Group</label>  
+                                    <label class="col-md-4 control-label" for="Workplace">Picture Attach</label>  
                                     <div class="col-md-4">
-                                        <input id="Blood" name="Blood" type="text" class="form-control input-md" required="">
+                                        <input id="picture" name="picture" type="file" class="form-control input-md" required="">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="Blood">Upload Image</label>  
-                                    <div class="col-md-4">
-                                        <input id="Image" name="Image" type="file" class="form-control input-md" required="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="receipt">Upload receipt</label>  
+                                    <label class="col-md-4 control-label" for="receipt">Money Receipt Attach</label>  
                                     <div class="col-md-4">
                                         <input id="receipt" name="receipt" type="file" class="form-control input-md" required="">
                                     </div>
@@ -840,35 +768,57 @@
             </div>
         </div>
 
+        <!-- Modal for post2 -->
+        <div id="post2" class="modal fade bs-example-modal-lg" style="margin-top: 4%;margin-left: 15%;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="width: 80%">
+                    <div class="modal-header"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button> 
+                        <h4 class="modal-title" id="myLargeModalLabel">World Congress of Optometry</h4> 
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/post2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript">
-                                    function doRegister() {
-                                        var form = document.getElementsByTagName("form")[1];
-                                        var name = form["name"].value;
-                                        var email = form["email"].value;
-                                        var sub = form["subject"].value;
-                                        var msg = form["message"].value;
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+        </script>
+        <script type="text/javascript">
+            function doRegister() {
+                var form = document.getElementsByTagName("form")[1];
+                var name = form["name"].value;
+                var email = form["email"].value;
+                var sub = form["subject"].value;
+                var msg = form["message"].value;
 
-                                        if (name === "" || email === "" || sub === "" || msg === "") {
-                                            success.innerHTML = "Please enter correct values";
-                                            success.style.color = "red";
-                                            return false;
-                                        }
+                if (name === "" || email === "" || sub === "" || msg === "") {
+                    success.innerHTML = "Please enter correct values";
+                    success.style.color = "red";
+                    return false;
+                }
 
-                                        $.post("register.php", {
-                                            email: email,
-                                            name: name,
-                                            sub: sub,
-                                            msg: msg
-                                        }).done(function () {
-                                            success.innerHTML = "Registration Successfull";
-                                            success.style.color = "#34495e";
-                                        }).fail(function () {
-                                            success.innerHTML = "Registration Failed";
-                                            success.style.color = "red";
-                                        });
-                                        return false;
-                                    }
+                $.post("register.php", {
+                    email: email,
+                    name: name,
+                    sub: sub,
+                    msg: msg
+                }).done(function () {
+                    success.innerHTML = "Registration Successfull";
+                    success.style.color = "#34495e";
+                }).fail(function () {
+                    success.innerHTML = "Registration Failed";
+                    success.style.color = "red";
+                });
+                return false;
+            }
         </script>
 
     </body>

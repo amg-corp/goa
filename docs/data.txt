@@ -4,3 +4,32 @@ Mail:
 registration@graduateoptometrists.com
 
 Register@1234
+
+Registration Forms:
+
+1. Name 
+2. Address
+3. Date of birth
+4. Gender
+5. Blood group
+6. Basic education 10+2  institution
+7. Board/council
+8. Optometry Graduation : institution
+9. University
+10. Current professional attachment
+
+<h5>Hi President,
+
+New Registrant has applied:
+
+1) Name: 
+2) Address:
+3) Date of Birth:
+4) Gender:
+5) Blood Group:
+6) 10 + 2 Institute Name:
+7) Board:
+8) Optometry Institue Name:
+9) University:
+
+
